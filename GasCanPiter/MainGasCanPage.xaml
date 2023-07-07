@@ -1,0 +1,35 @@
+﻿<Page x:Class="GasCanPiter.MainGasCanPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GasCanPiter"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainGasCanPage"
+      Background="white">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="1" Margin="15" Content="АП-92" MaxHeight="80"/>
+        <Button Grid.Row="0" Grid.Column="2" Margin="15" Content="АП-95" MaxHeight="80"/>
+        <Button Grid.Row="0" Grid.Column="3" Margin="15" Content="АП-98" MaxHeight="80"/>
+        <Button Grid.Row="0" Grid.Column="4" Margin="15" Content="Дизельное Топливо" MaxHeight="80"/>
+        <WrapPanel Grid.Row="1" Grid.ColumnSpan="4" Grid.Column="1" FlowDirection="LeftToRight">
+            <Button  Margin="15" Content="на определенную сумму" MaxHeight="80" FontSize="15" Padding="10"/>
+            <Button  Margin="100,15,0,15" Content="определенное количество литров" MaxHeight="80" Padding="10" FontSize="15"/>
+            <Button Margin="150,15,15,15" Content="до полного бака с ограничением по количству литров" Padding="10" FontSize="15" MaxHeight="80"/>
+        </WrapPanel>
+    </Grid>
+</Page>

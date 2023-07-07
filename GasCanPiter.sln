@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GasCanPiter", "GasCanPiter\GasCanPiter.csproj", "{62623C9D-BEFD-40A6-A9B1-DE896643A8DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62623C9D-BEFD-40A6-A9B1-DE896643A8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62623C9D-BEFD-40A6-A9B1-DE896643A8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62623C9D-BEFD-40A6-A9B1-DE896643A8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62623C9D-BEFD-40A6-A9B1-DE896643A8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C537A5B-739C-4AAD-815E-B5B5A8903A7E}
+	EndGlobalSection
+EndGlobal
