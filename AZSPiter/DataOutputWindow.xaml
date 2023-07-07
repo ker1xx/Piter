@@ -1,0 +1,42 @@
+﻿<Window x:Class="AZSPiter.DataOutputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AZSPiter"
+        mc:Ignorable="d"
+        Title="DataOutputWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Географический адрес АЗС: " Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="2,0,0,0" FontSize="15"/>
+        <TextBlock Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="15" FontSize="15"/>
+        <TextBlock Text="Цена литра АИ-92 в рублях: " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBox Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBlock Text="Остаток АИ-92 в хранилище в литрах: " Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" FontSize="15"/>
+        <TextBox Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBlock Text="Цена литра АИ-95 в рублях: " Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBlock Text="Остаток АИ-95 в хранилище в литрах: " Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" FontSize="15"/>
+        <TextBlock Text="Цена литра АИ-98 в рублях: " Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBox Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBox Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBlock Text="Остаток АИ-98 в хранилище в литрах: " Grid.Row="2" Grid.Column="2" TextWrapping="Wrap" FontSize="15"/>
+        <TextBlock Text="Цена литра ДТ в рублях: " Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" FontSize="15"/>
+        <TextBox Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBox Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" FontSize="15" TextWrapping="Wrap"/>
+        <TextBlock Text="Остаток ДТ в хранилище в литрах: " Grid.Row="2" Grid.Column="3" TextWrapping="Wrap" FontSize="15"/>
+        <Button Grid.Row="3" Margin="100,0,100,0" Grid.ColumnSpan="4" Content="Сохранить изменения" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
