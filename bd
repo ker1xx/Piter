@@ -1,0 +1,23 @@
+create table Stations(
+Station_ID int primary key not null,
+[Address] varchar(100) not null,
+[data1] int not null,
+[data2] int not null,
+[data3] int not null,
+[data4] int not null,
+foreign key (data1) references [data] (id),
+foreign key (data2) references [data] (id),
+foreign key (data3) references [data] (id),
+foreign key (data4) references [data] (id)
+)
+
+create table [data](
+id int identity (1,1) primary key not null,
+Station_ID int not null,
+[Name] varchar (30) not null,
+Price float not null,
+AmountOfFuel int not null,
+)
+
+drop table [data]
+drop table Stations
