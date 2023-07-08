@@ -1,0 +1,11 @@
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.csproj.AssemblyReference.cache
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.csproj.SuggestedBindingRedirects.cache
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.csproj.CoreCompileInputs.cache
+C:\Users\я\source\repos\BankPiter\BankPiter\bin\Debug\BankPiter.exe.config
+C:\Users\я\source\repos\BankPiter\BankPiter\bin\Debug\BankPiter.exe
+C:\Users\я\source\repos\BankPiter\BankPiter\bin\Debug\BankPiter.pdb
+C:\Users\я\source\repos\BankPiter\BankPiter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\я\source\repos\BankPiter\BankPiter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.csproj.CopyComplete
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.exe
+C:\Users\я\source\repos\BankPiter\BankPiter\obj\Debug\BankPiter.pdb
