@@ -58,6 +58,7 @@
     <Compile Include="MainGasCanPage.xaml.cs">
       <DependentUpon>MainGasCanPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TCPClient.cs" />
     <Compile Include="TCPServer.cs" />
     <Page Include="MainGasCanPage.xaml">
       <SubType>Designer</SubType>

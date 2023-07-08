@@ -17,5 +17,6 @@
         <TextBlock Text="Введите номер колонки: " Grid.Row="1" Margin="0,15,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25"/>
         <TextBox x:Name="GasCan_ID" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="300" MinHeight="40" Margin="0,40,0,0"/>
         <Button x:Name="Start" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Content="Начать работу" Padding="15" Click="Start_Click"/>
+        <Frame x:Name="MainPage" Grid.Row="0" Grid.RowSpan="3"/>
     </Grid>
 </Window>

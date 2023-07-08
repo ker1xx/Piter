@@ -31,5 +31,6 @@
             <Button  Margin="100,15,0,15" Content="определенное количество литров" MaxHeight="80" Padding="10" FontSize="15"/>
             <Button Margin="150,15,15,15" Content="до полного бака с ограничением по количству литров" Padding="10" FontSize="15" MaxHeight="80"/>
         </WrapPanel>
+        <Button x:Name="Pay" Content="Оплатить" Grid.Column="2" Grid.Row="2" Margin="40" Click="Pay_Click"></Button>
     </Grid>
 </Page>

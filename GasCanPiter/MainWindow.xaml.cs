@@ -36,6 +36,8 @@ namespace GasCanPiter
                 getID = Convert.ToInt32(msg);
             };
             TCPServer.Start(AZS_ID.Text);
+            MainGasCanPage newwin = new MainGasCanPage(_codeWord);
+            MainPage.Content = newwin;
         }
         private string _generateCodeWord()
         {
@@ -51,11 +53,6 @@ namespace GasCanPiter
         }
         private async void Init()
         {
-            List<StationModel> List = new List<StationModel>();
-            HttpClient client = new HttpClient();
-            var response = client.GetAsync(apiurl + "Stations/" + ID_Input.Text).Result;
-            response.EnsureSuccessStatusCode();
-            List = response.Content.ReadAsStringAsync<List<StationModel>>();
         }
     }
 }
