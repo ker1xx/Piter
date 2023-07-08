@@ -36,7 +36,7 @@ namespace AZSPiter
             HttpClient client = new HttpClient();
             var response = client.GetAsync(apiurl + "Stations/" + ID_Input.Text).Result;
             response.EnsureSuccessStatusCode();
-            List = response.Content.ReadAsStringAsync<List<StationModel>>();
+            List = response.Content.ReadAsAsync<List<StationModel>>();
         }
         private void GetDataButton_Click(object sender, RoutedEventArgs e)
         {
