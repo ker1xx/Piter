@@ -1,0 +1,22 @@
+create table [Bank_Transaction](
+id int identity (1,1) primary key,
+card_number int not null,
+[name_surname] varchar(100) not null,
+authorization_code int not null,
+price float not null,
+organization_name varchar(50) not null,
+AZS_ID int,
+foreign key ([AZS_ID]) references Gas_Station (id),
+session_key varchar(12) not null
+)
+
+create table purchase(
+id int identity (1,1) primary key,
+cardHolder varchar(100) not null,
+purchaseDate DateTime not null,
+station_ID int,
+foreign key (station_ID) references Stations (Station_ID),
+fuelType varchar(30) not null,
+[value] float not null,
+cost float not null,
+paymentType varchar(30) not null)
