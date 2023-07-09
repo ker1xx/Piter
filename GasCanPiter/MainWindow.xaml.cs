@@ -22,10 +22,14 @@ namespace GasCanPiter
     public partial class MainWindow : Window
     {
         private string _codeWord;
+        TCPClient TCPClient { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             _codeWord = _generateCodeWord();
+            TCPClient = new TCPClient();
+            TCPClient.Connect("0");
+            TCPClient.SendMessage("A999AA199");
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
