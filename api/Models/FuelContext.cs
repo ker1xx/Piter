@@ -27,6 +27,7 @@ public partial class FuelContext : DbContext
     public virtual DbSet<Purchase> Purchases { get; set; }
 
     public virtual DbSet<Station> Stations { get; set; }
+    public virtual DbSet<Vechicle> Vechicles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -151,6 +152,25 @@ public partial class FuelContext : DbContext
             entity.Property(e => e.Data2).HasColumnName("data2");
             entity.Property(e => e.Data3).HasColumnName("data3");
             entity.Property(e => e.Data4).HasColumnName("data4");
+        });
+
+        modelBuilder.Entity<Vechicle>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__vechicle__3213E83FDE7E332E");
+
+            entity.ToTable("vechicle");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CarNumber)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasColumnName("car_number");
+            entity.Property(e => e.CurrentFuel).HasColumnName("current_fuel");
+            entity.Property(e => e.SizeOfTank).HasColumnName("size_of_tank");
+            entity.Property(e => e.SupportedFuel)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("supported_fuel");
         });
 
         OnModelCreatingPartial(modelBuilder);
