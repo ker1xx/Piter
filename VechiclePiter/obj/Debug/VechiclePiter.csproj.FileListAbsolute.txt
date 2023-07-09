@@ -1,0 +1,16 @@
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\bin\Debug\VechiclePiter.exe.config
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\bin\Debug\VechiclePiter.exe
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\bin\Debug\VechiclePiter.pdb
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.csproj.AssemblyReference.cache
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.csproj.SuggestedBindingRedirects.cache
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\MainWindow.g.cs
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\App.g.cs
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter_MarkupCompile.cache
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter_MarkupCompile.lref
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\MainWindow.baml
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.g.resources
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.Properties.Resources.resources
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.csproj.GenerateResource.cache
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.csproj.CoreCompileInputs.cache
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.exe
+C:\Users\я\source\repos\VechiclePiter\VechiclePiter\obj\Debug\VechiclePiter.pdb

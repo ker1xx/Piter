@@ -1,0 +1,47 @@
+﻿<Window x:Class="VechiclePiter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VechiclePiter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Серийный номер: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <TextBox x:Name="SerialNumberTextBox" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" MinHeight="30" MinWidth="350"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Читаем ли номер? " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <CheckBox x:Name="IsReadableNumberCheckBox" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Тип топлива: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <WrapPanel Grid.Row="2" Grid.Column="1" FlowDirection="LeftToRight">
+            <RadioButton x:Name="TypeOfFuel92" Content="АП-92" Margin="15" GroupName="TypeOfFuel" Checked="RadioButtonChecked"/>
+            <RadioButton x:Name="TypeOfFuel95" Content="АП-95" Margin="15" GroupName="TypeOfFuel" Checked="RadioButtonChecked"/>
+            <RadioButton x:Name="TypeOfFuel98" Content="АП-98" Margin="15" GroupName="TypeOfFuel" Checked="RadioButtonChecked"/>
+            <RadioButton x:Name="TypeOfFuelDisel" Content="ДТ" Margin="15" GroupName="TypeOfFuel" Checked="RadioButtonChecked"/>
+        </WrapPanel>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Объем бака: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <TextBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinHeight="30" MinWidth="350" FontSize="20"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding ElementName=CurrentFuelLevel, Path=Value, StringFormat=Текущее количество топлива: {0}}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <Slider x:Name="CurrentFuelLevel" Grid.Row="4" Grid.Column="1" Minimum="0" Maximum="100" VerticalAlignment="Center" Margin="30,0,30,0" Cursor="AppStarting"/>
+        <TextBlock Grid.Row="4" Text="0" Margin="18,28,367,4" Grid.Column="1"/>
+        <TextBlock Grid.Row="4" Text="0" Margin="370,28,15,4" Grid.Column="1"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Выбор заправки: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <ComboBox x:Name="PickGasStation" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinHeight="30" MinWidth="350"/>
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Выбор колонки: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Выбор действия: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+    </Grid>
+</Window>
