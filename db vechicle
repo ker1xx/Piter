@@ -1,0 +1,6 @@
+create table vechicle(
+id int identity (1,1) primary key,
+car_number varchar(10) not null,
+supported_fuel varchar(20) not null,
+size_of_tank float not null,
+current_fuel float not null)
